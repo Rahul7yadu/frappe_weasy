@@ -245,3 +245,6 @@ app_license = "unlicense"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+override_whitelisted_methods = {
+    "frappe.utils.print_format.download_pdf": "frappe_weasy.utils.pdf.download_pdf"
+}
